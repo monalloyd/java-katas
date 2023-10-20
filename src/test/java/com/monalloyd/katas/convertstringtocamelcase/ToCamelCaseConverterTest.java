@@ -15,7 +15,9 @@ class ToCamelCaseConverterTest {
             "'aaaAaa', 'aaa_aaa'",
             "'aaaAaa', 'aaa-aaa'",
             "'AaaAaa', 'Aaa_Aaa'",
-            "'AaaAaa', 'Aaa-aaa'"
+            "'AaaAaa', 'Aaa-aaa'",
+            "'aaaAaa', 'aaa aaa'",
+            "'AaaAaa', 'Aaa aaa'"
     })
     void toCamelCase(String expected, String text) {
         String result = converter.toCamelCase(text);
